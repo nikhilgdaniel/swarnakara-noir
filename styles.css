@@ -139,13 +139,13 @@ nav a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.58fr);
-  gap: 42px;
-  align-items: end;
+  grid-template-columns: minmax(0, 0.78fr) minmax(300px, 0.42fr);
+  gap: 32px;
+  align-items: center;
   width: min(1160px, calc(100% - 32px));
   min-height: 100svh;
   margin: 0 auto;
-  padding: 132px 0 70px;
+  padding: 118px 0 64px;
 }
 
 .hero-copy {
@@ -199,6 +199,17 @@ nav a:hover {
 
 .hero-eyebrow {
   color: var(--gold-soft);
+}
+
+.hero-copy h1 {
+  max-width: 660px;
+  font-size: clamp(50px, 5.2vw, 72px);
+}
+
+.hero-copy .lead {
+  max-width: 640px;
+  font-size: clamp(17px, 1.45vw, 20px);
+  line-height: 1.62;
 }
 
 .malayalam {
@@ -530,6 +541,10 @@ footer {
   }
 
   h1 {
+    font-size: 40px;
+  }
+
+  .hero-copy h1 {
     font-size: 40px;
   }
 
