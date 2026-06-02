@@ -273,6 +273,7 @@ p {
 .stats div,
 .rate-card,
 .seal-card,
+.feature-card,
 .plans article,
 .article-copy,
 .promise,
@@ -303,13 +304,16 @@ p {
 }
 
 .rate-card,
-.seal-card {
+.seal-card,
+.feature-card {
   padding: 28px;
 }
 
 .rate-card span,
 .rate-card small,
-.seal-card span {
+.seal-card span,
+.feature-card span,
+.feature-card small {
   display: block;
   color: var(--muted);
 }
@@ -328,6 +332,13 @@ p {
   font-family: "Noto Sans Malayalam", sans-serif;
   font-size: 24px;
   font-weight: 700;
+}
+
+.feature-card strong {
+  display: block;
+  margin: 10px 0;
+  color: var(--gold-soft);
+  font-size: 24px;
 }
 
 .article-section,
