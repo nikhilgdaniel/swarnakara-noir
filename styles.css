@@ -566,9 +566,7 @@ p {
 }
 
 .media-links {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.55fr) 1fr;
-  gap: 18px;
+  display: block;
   margin-top: 16px;
   padding: 28px;
 }
@@ -646,14 +644,51 @@ p {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
   gap: 16px;
   width: var(--site-width);
   margin: 0 auto;
   padding: 36px 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social a {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--gold-soft);
+  border: 1px solid rgba(214,168,79,.2);
+  background: rgba(214,168,79,.07);
+}
+
+.footer-social a:hover {
+  border-color: rgba(242,211,138,.5);
+  background: rgba(214,168,79,.14);
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.footer-social a:last-child svg {
+  fill: currentColor;
+  stroke: none;
 }
 
 @media (max-width: 900px) {
@@ -688,7 +723,6 @@ footer {
 
   .plans,
   .awards-grid,
-  .media-links,
   .promise-grid {
     grid-template-columns: 1fr;
   }
@@ -745,5 +779,10 @@ footer {
 
   footer {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
   }
 }
