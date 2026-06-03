@@ -398,7 +398,6 @@ p {
 .article-section,
 .about-section,
 .section,
-.founder-letter,
 .promise,
 .contact {
   width: var(--site-width);
@@ -476,6 +475,37 @@ p {
   padding: 80px 0;
 }
 
+.director-letter {
+  grid-template-columns: minmax(280px, .68fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+.director-letter-head {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(30px, 5vw, 60px);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(242,211,138,.18), transparent 35%),
+    linear-gradient(160deg, rgba(214,168,79,.12), rgba(255,255,255,.025));
+  box-shadow: var(--shadow);
+}
+
+.director-letter-head h2 {
+  max-width: 680px;
+}
+
+.director-letter-head p:last-child {
+  max-width: 300px;
+  margin: 36px 0 0;
+  color: var(--gold-soft);
+  font-weight: 900;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
 .article-image {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -524,14 +554,6 @@ p {
   border-bottom: 1px solid var(--gold);
 }
 
-.founder-letter {
-  display: grid;
-  grid-template-columns: minmax(0, .72fr) minmax(320px, 1fr);
-  gap: 28px;
-  align-items: stretch;
-  padding: 32px 0 76px;
-}
-
 .letter-card {
   padding: clamp(28px, 4.5vw, 52px);
   border: 1px solid var(--line);
@@ -543,6 +565,19 @@ p {
 
 .letter-card p {
   margin-bottom: 18px;
+}
+
+.director-letter-card {
+  padding: clamp(28px, 5vw, 58px);
+}
+
+.director-letter-card p {
+  max-width: 820px;
+}
+
+.letter-closing {
+  color: var(--gold-soft);
+  font-weight: 800;
 }
 
 .signature-block {
@@ -779,9 +814,12 @@ footer {
   .about-intro,
   .article-section,
   .section-head,
-  .founder-letter,
   .promise {
     grid-template-columns: 1fr;
+  }
+
+  .director-letter-head {
+    min-height: 420px;
   }
 
   .hero {
