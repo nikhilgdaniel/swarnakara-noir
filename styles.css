@@ -343,6 +343,12 @@ p {
   white-space: nowrap;
 }
 
+.protection-tag {
+  max-width: 150px;
+  padding-right: 14px;
+  padding-left: 12px;
+}
+
 .offer-icon {
   display: grid;
   place-items: center;
