@@ -395,6 +395,7 @@ p {
 
 .article-section,
 .section,
+.founder-letter,
 .promise,
 .contact {
   width: var(--site-width);
@@ -439,6 +440,7 @@ p {
 }
 
 .article-copy p,
+.letter-card p,
 .section-head p,
 .plans p,
 .award-card p,
@@ -454,6 +456,51 @@ p {
   color: var(--gold-soft);
   font-weight: 800;
   border-bottom: 1px solid var(--gold);
+}
+
+.founder-letter {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(320px, 1fr);
+  gap: 28px;
+  align-items: stretch;
+  padding: 32px 0 76px;
+}
+
+.letter-card {
+  padding: clamp(28px, 4.5vw, 52px);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 86% 0%, rgba(242,211,138,.15), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+  box-shadow: var(--shadow);
+}
+
+.letter-card p {
+  margin-bottom: 18px;
+}
+
+.signature-block {
+  display: grid;
+  gap: 10px;
+  max-width: 340px;
+  margin-top: 28px;
+}
+
+.signature-block img {
+  width: min(320px, 100%);
+  height: 92px;
+  object-fit: contain;
+  object-position: left center;
+  padding: 12px 14px;
+  border: 1px solid rgba(214,168,79,.18);
+  background: rgba(247,239,224,.92);
+}
+
+.signature-block span {
+  color: var(--gold-soft);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .section {
@@ -630,6 +677,7 @@ footer {
   .hero,
   .article-section,
   .section-head,
+  .founder-letter,
   .promise {
     grid-template-columns: 1fr;
   }
