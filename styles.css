@@ -278,8 +278,7 @@ p {
 }
 
 .stats div,
-.rate-card,
-.seal-card,
+.offer-card,
 .feature-card,
 .plans article,
 .article-copy,
@@ -310,35 +309,67 @@ p {
   gap: 16px;
 }
 
-.rate-card,
-.seal-card,
+.offer-card,
 .feature-card {
   padding: 28px;
 }
 
-.rate-card span,
-.rate-card small,
-.seal-card span,
+.offer-card small,
 .feature-card span,
 .feature-card small {
   display: block;
   color: var(--muted);
 }
 
-.rate-card strong {
-  display: block;
-  margin: 10px 0;
-  color: var(--gold-soft);
-  font-family: "Playfair Display", serif;
-  font-size: 42px;
+.offer-card {
+  position: relative;
+  min-height: 232px;
 }
 
-.seal-card p {
-  margin-bottom: 10px;
+.offer-tag {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  max-width: 148px;
+  padding: 8px 12px;
   color: var(--gold-soft);
-  font-family: "Noto Sans Malayalam", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  border: 1px solid rgba(214, 168, 79, 0.16);
+  background: rgba(214, 168, 79, 0.08);
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.offer-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 28px;
+  color: var(--gold-soft);
+  border: 1px solid rgba(214, 168, 79, 0.12);
+  background: rgba(242, 211, 138, 0.07);
+}
+
+.offer-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.offer-card strong {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.offer-card small {
+  max-width: 390px;
+  color: rgba(247, 239, 224, 0.68);
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .feature-card strong {
