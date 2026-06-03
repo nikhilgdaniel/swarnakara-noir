@@ -18,7 +18,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.18 });
 
-document.querySelectorAll(".about-section, .article-section, .award-card, .media-links, .plans article, .promise, .contact, .hero-panel").forEach((el) => {
+document.querySelectorAll(".about-section, .mission-section, .article-section, .award-card, .media-links, .plans article, .promise, .contact, .hero-panel").forEach((el) => {
   el.style.opacity = "0";
   observer.observe(el);
 });
