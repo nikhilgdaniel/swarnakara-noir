@@ -61,6 +61,10 @@ img {
   max-width: 100%;
 }
 
+section {
+  scroll-margin-top: 110px;
+}
+
 .header {
   position: fixed;
   z-index: 10;
@@ -280,6 +284,8 @@ p {
 .stats div,
 .offer-card,
 .feature-card,
+.award-card,
+.media-links,
 .plans article,
 .article-copy,
 .promise,
@@ -435,6 +441,7 @@ p {
 .article-copy p,
 .section-head p,
 .plans p,
+.award-card p,
 .promise-grid p {
   color: var(--muted);
   font-size: 18px;
@@ -467,7 +474,8 @@ p {
   gap: 16px;
 }
 
-.plans article {
+.plans article,
+.award-card {
   padding: 28px;
 }
 
@@ -475,16 +483,74 @@ p {
   background: linear-gradient(145deg, rgba(214,168,79,.28), rgba(255,255,255,.05));
 }
 
-.plans span {
+.plans span,
+.award-card span {
   color: var(--gold);
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.plans h3 {
+.plans h3,
+.award-card h3 {
   margin: 14px 0;
   font-size: 30px;
+  line-height: 1.08;
+}
+
+.awards-section {
+  padding-top: 60px;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.award-card {
+  min-height: 260px;
+}
+
+.certification-card {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(242,211,138,.24), transparent 34%),
+    linear-gradient(145deg, rgba(214,168,79,.22), rgba(255,255,255,.045));
+}
+
+.media-links {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.55fr) 1fr;
+  gap: 18px;
+  margin-top: 16px;
+  padding: 28px;
+}
+
+.media-links .eyebrow {
+  margin-bottom: 12px;
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.link-list a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 0 14px;
+  color: var(--gold-soft);
+  border: 1px solid rgba(214,168,79,.18);
+  background: rgba(214,168,79,.07);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.link-list a:hover {
+  border-color: rgba(242,211,138,.48);
+  background: rgba(214,168,79,.13);
 }
 
 .promise {
@@ -573,6 +639,8 @@ footer {
   }
 
   .plans,
+  .awards-grid,
+  .media-links,
   .promise-grid {
     grid-template-columns: 1fr;
   }
