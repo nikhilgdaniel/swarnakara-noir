@@ -274,21 +274,12 @@ p {
   margin: 28px 0;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 700px;
-}
-
-.stats div,
 .offer-card,
 .feature-card,
 .about-section,
 .about-grid article,
 .award-card,
 .media-links,
-.plans article,
 .article-copy,
 .promise,
 .contact {
@@ -297,19 +288,19 @@ p {
   box-shadow: var(--shadow);
 }
 
-.stats div {
-  padding: 16px;
+.hero-photo {
+  overflow: hidden;
+  margin: 28px 0 0;
+  border: 1px solid rgba(214,168,79,.24);
+  background: var(--panel);
+  box-shadow: var(--shadow);
 }
 
-.stats strong {
-  display: block;
-  color: var(--gold-soft);
-  font-size: 30px;
-}
-
-.stats span {
-  color: var(--muted);
-  font-size: 13px;
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 8.4;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-panel {
@@ -616,7 +607,6 @@ p {
 .article-copy p,
 .letter-card p,
 .section-head p,
-.plans p,
 .award-card p,
 .promise-grid p {
   color: var(--muted);
@@ -694,22 +684,10 @@ p {
   margin-bottom: 30px;
 }
 
-.plans {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.plans article,
 .award-card {
   padding: 28px;
 }
 
-.plans .featured {
-  background: linear-gradient(145deg, rgba(214,168,79,.28), rgba(255,255,255,.05));
-}
-
-.plans span,
 .award-card span {
   color: var(--gold);
   font-size: 12px;
@@ -717,7 +695,6 @@ p {
   text-transform: uppercase;
 }
 
-.plans h3,
 .award-card h3 {
   margin: 14px 0;
   font-size: 30px;
@@ -958,7 +935,6 @@ footer {
     align-items: start;
   }
 
-  .plans,
   .about-grid,
   .mission-statement-grid,
   .values-grid,
@@ -1021,10 +997,6 @@ footer {
   .hero-actions,
   .contact-actions {
     flex-direction: column;
-  }
-
-  .stats {
-    grid-template-columns: 1fr;
   }
 
   .article-image img {
