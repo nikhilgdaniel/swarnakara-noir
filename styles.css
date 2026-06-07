@@ -410,18 +410,27 @@ p {
   margin-bottom: 0;
 }
 
-.about-intro h2 {
+.about-column h2 {
   max-width: 680px;
 }
 
-.about-intro p {
+.about-column p {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.7;
 }
 
+.about-column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-column-visual {
+  gap: 24px;
+}
+
 .about-photo {
-  align-self: stretch;
   min-height: 280px;
   overflow: hidden;
   border: 1px solid rgba(214,168,79,.22);
