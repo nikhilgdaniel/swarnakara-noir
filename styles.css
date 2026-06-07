@@ -976,9 +976,17 @@ footer {
     min-height: 0;
   }
 
-  .about-photo,
+  .about-photo {
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
   .about-photo img {
-    min-height: 240px;
+    display: block;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
   }
 
   footer,
