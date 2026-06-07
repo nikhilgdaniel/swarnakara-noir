@@ -550,10 +550,7 @@ p {
 }
 
 .director-letter-intro {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 24px;
-  align-content: start;
+  display: block;
 }
 
 .director-letter-head {
@@ -583,11 +580,13 @@ p {
 }
 
 .director-portrait {
+  float: right;
   overflow: hidden;
-  margin: 0;
+  width: clamp(180px, 18vw, 220px);
+  margin: 0 0 24px 30px;
   border: 1px solid var(--line);
   background: var(--panel);
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 42px rgba(0,0,0,.28);
 }
 
 .director-portrait img {
@@ -952,6 +951,12 @@ footer {
 
   .director-letter-head {
     min-height: 390px;
+  }
+
+  .director-portrait {
+    float: none;
+    width: min(100%, 260px);
+    margin: 0 auto 28px;
   }
 
   .hero {
