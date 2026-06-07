@@ -549,9 +549,16 @@ p {
   gap: 24px;
 }
 
+.director-letter-intro {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 24px;
+  align-content: start;
+}
+
 .director-letter-head {
   display: flex;
-  min-height: 100%;
+  min-height: 460px;
   flex-direction: column;
   justify-content: space-between;
   padding: clamp(30px, 5vw, 60px);
@@ -573,6 +580,22 @@ p {
   font-weight: 900;
   line-height: 1.35;
   text-transform: uppercase;
+}
+
+.director-portrait {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.director-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .article-image {
@@ -928,7 +951,7 @@ footer {
   }
 
   .director-letter-head {
-    min-height: 420px;
+    min-height: 390px;
   }
 
   .hero {
@@ -1001,6 +1024,10 @@ footer {
 
   .article-image img {
     min-height: 390px;
+  }
+
+  .director-letter-head {
+    min-height: 420px;
   }
 
   .footer-social {
