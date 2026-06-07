@@ -281,7 +281,6 @@ p {
 .award-card,
 .media-links,
 .article-copy,
-.promise,
 .contact {
   border: 1px solid var(--line);
   background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
@@ -390,7 +389,6 @@ p {
 .about-section,
 .mission-section,
 .section,
-.promise,
 .contact {
   width: var(--site-width);
   margin: 0 auto;
@@ -630,8 +628,7 @@ p {
 .article-copy p,
 .letter-card p,
 .section-head p,
-.award-card p,
-.promise-grid p {
+.award-card p {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.7;
@@ -777,32 +774,6 @@ p {
   background: rgba(214,168,79,.13);
 }
 
-.promise {
-  display: grid;
-  grid-template-columns: minmax(0, .74fr) 1fr;
-  gap: 34px;
-  padding: clamp(30px, 5vw, 56px);
-}
-
-.promise-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.promise-grid p {
-  margin: 0;
-  padding: 18px;
-  border: 1px solid rgba(214,168,79,.16);
-  background: rgba(0,0,0,.22);
-}
-
-.promise-grid strong {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--gold-soft);
-}
-
 .contact {
   margin-top: 80px;
   padding: clamp(36px, 7vw, 82px);
@@ -945,8 +916,7 @@ footer {
   .about-intro,
   .mission-head,
   .article-section,
-  .section-head,
-  .promise {
+  .section-head {
     grid-template-columns: 1fr;
   }
 
@@ -967,8 +937,7 @@ footer {
   .about-grid,
   .mission-statement-grid,
   .values-grid,
-  .awards-grid,
-  .promise-grid {
+  .awards-grid {
     grid-template-columns: 1fr;
   }
 
