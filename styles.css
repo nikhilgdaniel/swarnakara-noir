@@ -160,11 +160,11 @@ nav a:hover {
   background: #0f7a40;
 }
 
-.whatsapp-btn svg {
+.whatsapp-btn img {
   width: 20px;
   height: 20px;
   flex: 0 0 auto;
-  fill: currentColor;
+  border-radius: 5px;
 }
 
 .whatsapp-float {
@@ -198,11 +198,11 @@ nav a:hover {
   outline-offset: 3px;
 }
 
-.whatsapp-float svg {
-  width: 27px;
-  height: 27px;
+.whatsapp-float img {
+  width: 34px;
+  height: 34px;
   flex: 0 0 auto;
-  fill: currentColor;
+  border-radius: 8px;
 }
 
 .hero {
